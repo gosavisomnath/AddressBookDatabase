@@ -1,1 +1,18 @@
 ***Welcome****
+UC-1
+---------------
+mysql> create database Address_Book_Service;
+mysql> show databases;
++----------------------+
+| Database             |
++----------------------+
+| address_book_service |
+| information_schema   |
+| mysql                |
+| performance_schema   |
+| sys                  |
++----------------------+
+5 rows in set (0.37 sec)
+
+mysql> use address_book_Service;
+Database changed

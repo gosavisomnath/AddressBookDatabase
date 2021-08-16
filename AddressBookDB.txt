@@ -80,3 +80,28 @@ mysql> select * from Address_book;
 | vikram     | xcs       | solapur | solapur | karnataka   | 124563 | 111111111    | vikram@gmail.com |
 +------------+-----------+---------+---------+-------------+--------+--------------+------------------+
 3 rows in set (0.11 sec)
+
+UC-5
+-----------------
+mysql> select * from Address_book;
++------------+-----------+---------+---------+-------------+--------+--------------+------------------+
+| first_name | last_name | address | city    | state       | zip    | phone_number | email            |
++------------+-----------+---------+---------+-------------+--------+--------------+------------------+
+| soma       | gosavi    | pune    | Mumbai  | maharashtra | 411028 | 7775953164   | soma@gmail.com   |
+| ajay       | giri      | solapur | solapur | maharashtra | 413602 | 999999999    | ajay@gmail.com   |
+| vikram     | xcs       | solapur | solapur | karnataka   | 124563 | 111111111    | vikram@gmail.com |
++------------+-----------+---------+---------+-------------+--------+--------------+------------------+
+3 rows in set (0.11 sec)
+
+mysql> delete from address_book where first_name='vikram';
+Query OK, 1 row affected (0.25 sec)
+
+mysql> select * from Address_book;
++------------+-----------+---------+---------+-------------+--------+--------------+----------------+
+| first_name | last_name | address | city    | state       | zip    | phone_number | email          |
++------------+-----------+---------+---------+-------------+--------+--------------+----------------+
+| soma       | gosavi    | pune    | Mumbai  | maharashtra | 411028 | 7775953164   | soma@gmail.com |
+| ajay       | giri      | solapur | solapur | maharashtra | 413602 | 999999999    | ajay@gmail.com |
++------------+-----------+---------+---------+-------------+--------+--------------+----------------+
+2 rows in set (0.01 sec)
+

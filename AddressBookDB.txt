@@ -145,3 +145,30 @@ mysql> select * from Address_Book order by city;
 | ajay       | giri      | solapur | solapur | maharashtra | 413602 | 999999999    | ajay@gmail.com |
 +------------+-----------+---------+---------+-------------+--------+--------------+----------------+
 2 rows in set (0.00 sec)
+
+UC-9
+----------------
+ alter table Address_book add name varchar(20);
+Query OK, 0 rows affected (2.12 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table address_book add type varchar(20) after name;
+Query OK, 0 rows affected (1.79 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc address_book;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| first_name   | varchar(30) | NO   |     | NULL    |       |
+| last_name    | varchar(30) | NO   |     | NULL    |       |
+| address      | varchar(30) | NO   |     | NULL    |       |
+| city         | varchar(30) | NO   |     | NULL    |       |
+| state        | varchar(30) | NO   |     | NULL    |       |
+| zip          | varchar(6)  | NO   |     | NULL    |       |
+| phone_number | varchar(12) | NO   |     | NULL    |       |
+| email        | varchar(30) | NO   |     | NULL    |       |
+| name         | varchar(20) | YES  |     | NULL    |       |
+| type         | varchar(20) | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+10 rows in set (0.05 sec)

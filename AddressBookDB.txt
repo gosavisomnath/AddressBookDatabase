@@ -65,3 +65,18 @@ mysql> select * from Address_book;
 +------------+-----------+---------+---------+-------------+--------+--------------+------------------+
 3 rows in set (0.02 sec)
 
+UC-4
+--------------
+mysql> update Address_book set city='Mumbai' where first_name='soma';
+Query OK, 1 row affected (0.09 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from Address_book;
++------------+-----------+---------+---------+-------------+--------+--------------+------------------+
+| first_name | last_name | address | city    | state       | zip    | phone_number | email            |
++------------+-----------+---------+---------+-------------+--------+--------------+------------------+
+| soma       | gosavi    | pune    | Mumbai  | maharashtra | 411028 | 7775953164   | soma@gmail.com   |
+| ajay       | giri      | solapur | solapur | maharashtra | 413602 | 999999999    | ajay@gmail.com   |
+| vikram     | xcs       | solapur | solapur | karnataka   | 124563 | 111111111    | vikram@gmail.com |
++------------+-----------+---------+---------+-------------+--------+--------------+------------------+
+3 rows in set (0.11 sec)

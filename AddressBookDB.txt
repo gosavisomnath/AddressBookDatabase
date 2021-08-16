@@ -45,3 +45,23 @@ mysql> desc Address_Book;
 | email        | varchar(30) | NO   |     | NULL    |       |
 +--------------+-------------+------+-----+---------+-------+
 8 rows in set (0.22 sec)
+
+UC-3
+-----------------
+mysql> insert into Address_book values(
+    -> 'soma', 'gosavi', 'pune', 'pune', 'maharashtra', '411028', '7775953164', 'soma@gmail.com'),
+    -> ('ajay', 'giri', 'solapur' ,'solapur','maharashtra', '413602', '999999999', 'ajay@gmail.com'),
+    -> ('vikram', 'xcs', 'solapur', 'solapur','karnataka', '124563','111111111', 'vikram@gmail.com');
+Query OK, 3 rows affected (0.16 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> select * from Address_book;
++------------+-----------+---------+---------+-------------+--------+--------------+------------------+
+| first_name | last_name | address | city    | state       | zip    | phone_number | email            |
++------------+-----------+---------+---------+-------------+--------+--------------+------------------+
+| soma       | gosavi    | pune    | pune    | maharashtra | 411028 | 7775953164   | soma@gmail.com   |
+| ajay       | giri      | solapur | solapur | maharashtra | 413602 | 999999999    | ajay@gmail.com   |
+| vikram     | xcs       | solapur | solapur | karnataka   | 124563 | 111111111    | vikram@gmail.com |
++------------+-----------+---------+---------+-------------+--------+--------------+------------------+
+3 rows in set (0.02 sec)
+

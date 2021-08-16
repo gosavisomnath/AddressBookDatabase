@@ -172,3 +172,14 @@ mysql> desc address_book;
 | type         | varchar(20) | YES  |     | NULL    |       |
 +--------------+-------------+------+-----+---------+-------+
 10 rows in set (0.05 sec)
+
+UC-10
+---------------------
+mysql> select phone_number from address_book where type='family';
++--------------+
+| phone_number |
++--------------+
+| 7775953164   |
+| 999999999    |
++--------------+
+2 rows in set (0.00 sec)

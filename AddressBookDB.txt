@@ -115,3 +115,22 @@ mysql> select * from Address_Book where city='solapur' or state="maharashtra";
 | ajay       | giri      | solapur | solapur | maharashtra | 413602 | 999999999    | ajay@gmail.com |
 +------------+-----------+---------+---------+-------------+--------+--------------+----------------+
 2 rows in set (0.00 sec)
+
+
+UC-7
+-----------------
+mysql> select count(city) as size from address_book;
++------+
+| size |
++------+
+|    2 |
++------+
+1 row in set (0.05 sec)
+
+mysql> select count(state) as size from address_book;
++------+
+| size |
++------+
+|    2 |
++------+
+1 row in set (0.00 sec)
